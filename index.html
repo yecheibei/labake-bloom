@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' font-size='48'%3E%F0%9F%8C%B8%3C/text%3E%3C/svg%3E">
+<title>Labake Blooms · Happy birthday, Omolabake</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500;1,6..96,700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+<section class="hero"><div class="w">
+  <div class="top"><a class="wm" href="#">Labake Blooms</a><span class="pill">12 November</span></div>
+  <div class="hw">
+    <div class="fr">
+      <div class="arch"><img src="assets/omolabake-hero.jpg" alt="Omolabake in a black cap and graphic tee, smiling by a leafy tree"></div>
+      <div class="ring" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><path id="c" d="M100,100 m-82,0 a82,82 0 1,1 164,0 a82,82 0 1,1 -164,0"/></defs><text><textPath href="#c" textLength="500" lengthAdjust="spacing">HAPPY BIRTHDAY OMOLABAKE • 12 NOVEMBER • </textPath></text></svg><span>12</span></div>
+    </div>
+    <div class="ht">
+      <h1 class="nm"><span class="p">Happy birthday,</span><span class="n">Omolabake</span></h1>
+      <p class="lead">A little page from the people who love her. Watch, send a wish, and send a Bloom if you’d like. Nothing here is required.</p>
+      <div class="cta"><a class="btn" href="#wish">Leave a wish</a><a class="btn g" href="#blooms">Send a Bloom</a></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="tri" id="tribute"><div class="w tg">
+  <div>
+    <p class="k">Why this page exists</p>
+    <h2>Some people make every room softer. Today, we send some of that back.</h2>
+    <p class="sub">Her friends and well-wishers put this together for her day. Press play, say something kind, and join in however you like.</p>
+  </div>
+  <div class="vids">
+    <figure><video controls playsinline preload="metadata" poster="assets/clip-1-poster.jpg" src="assets/clip-1.mp4"></video></figure>
+    <figure><video controls playsinline preload="metadata" poster="assets/clip-2-poster.jpg" src="assets/clip-2.mp4"></video></figure>
+  </div>
+</div></section>
+
+<section id="blooms"><div class="w">
+  <p class="k">Blooms</p>
+  <h2>Send a few Blooms, if you want to.</h2>
+  <p class="sub">One Bloom is <span class="pr">₦500</span>. Send as many as you like, or none. <b>Nothing here is required.</b></p>
+  <div class="bg">
+    <ol class="steps"><li><i>1</i>Choose your Blooms</li><li><i>2</i>Transfer it yourself</li><li><i>3</i>Confirm on WhatsApp</li></ol>
+    <div class="pick">
+      <h3 class="pk">How many Blooms?</h3>
+      <div class="chips" id="chips"></div>
+      <div class="fl" style="margin-top:1.2rem"><label for="cq">Or enter your own number</label><input id="cq" inputmode="numeric" autocomplete="off" placeholder="e.g. 12"><p class="err" id="cqe" role="alert"></p></div>
+      <div class="tot" aria-live="polite"><span id="sl">Nothing selected yet</span><b id="tv">₦0</b></div>
+      <p class="fine">Choosing Blooms does not send money. You transfer it yourself, next.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="pnl dk" id="pay"><div class="w">
+  <p class="k">The transfer</p>
+  <h2>Transfer to this account.</h2>
+  <p class="sub">Use your own banking app. This page can’t take payments or see your transfer.</p>
+  <dl class="acct">
+    <div><dt>Bank</dt><dd>Moniepoint</dd></div>
+    <div><dt>Account number</dt><dd class="nr"><span class="num" id="an">8148182055</span><button class="cp" id="cp" type="button">Copy</button></dd></div>
+    <div><dt>Account name</dt><dd>Raji Fasilat Omolabak</dd></div>
+    <div><dt>Amount for your selection</dt><dd id="am">—</dd></div>
+  </dl>
+  <p class="fine">Transfers are checked by a person, not by this page. Never share a PIN, OTP or card details.</p>
+  <div class="cf">
+    <div><p class="k">Confirmation</p><h2>Already transferred?</h2><p class="sub">Fill this in and WhatsApp opens with your message ready. Nothing is stored here.</p><p class="sub">Not sending Blooms? <a href="#wish" style="color:var(--rose)">Skip to the wish.</a></p></div>
+    <form class="form" id="cfm" novalidate>
+      <div class="fl"><label for="pn">Name on the transfer</label><input id="pn" autocomplete="name" placeholder="The name your bank shows"></div>
+      <div class="fl"><label for="pa">Amount you transferred</label><input id="pa" inputmode="numeric" autocomplete="off" placeholder="e.g. 2,500"><button type="button" class="lk" id="ut">Use the selected total</button></div>
+      <div class="fl"><label for="pw">Birthday wish <i>optional</i></label><textarea id="pw" maxlength="280">Happy birthday Omolabake!</textarea></div>
+      <div class="mis" id="mis" role="alert" hidden><p id="mt"></p><button type="button" class="btn g" id="mf"></button><button type="button" class="btn g" id="mk">My amount is right</button></div>
+      <p class="err" id="ce" role="alert"></p>
+      <button class="btn bk" type="submit" style="margin-top:.8rem">Prepare WhatsApp message</button>
+      <p class="fine">You still press send in WhatsApp.</p>
+    </form>
+  </div>
+</div></section>
+
+<section id="wish"><div class="w wg">
+  <div>
+    <p class="k">Birthday wishes</p>
+    <h2>Say it loud. She’s listening.</h2>
+    <p class="sub">No payment needed. It opens in WhatsApp for you to send.</p>
+    <form class="form" id="wf" novalidate style="margin-top:1.6rem;border:1px solid var(--line)">
+      <div class="fl"><label for="wn">Your name <i>optional</i></label><input id="wn" autocomplete="nickname" maxlength="60" placeholder="Who it’s from"></div>
+      <div class="fl"><label for="wt">Your birthday wish</label><textarea id="wt" maxlength="280" placeholder="Happy birthday Omolabake…"></textarea><p class="err" id="we" role="alert"></p></div>
+      <button class="btn bk" type="submit">Open WhatsApp with my wish</button>
+      <p class="fine">You still press send in WhatsApp.</p>
+    </form>
+  </div>
+  <img class="wp" src="assets/omolabake-wish.jpg" alt="Omolabake in a white zip-up jacket with a graphic print, arms out and smiling">
+</div></section>
+
+<section class="cl"><div class="w">
+  <h2>Here’s to another year of joy, growth, and bigger things ahead.</h2>
+  <p class="sub">Birthday wishes are always welcome, with Blooms or without.</p>
+  <p class="sg">Happy birthday, Omolabake</p>
+</div></section>
+</main>
+<footer>Labake Blooms</footer>
+<nav class="dock" aria-label="Quick links"><a href="#tribute">Watch</a><a href="#wish">Wish</a><a class="b" href="#blooms">Bloom</a></nav>
+<script src="script.js" defer></script>
+</body>
+</html>
